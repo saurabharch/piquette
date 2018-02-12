@@ -1,0 +1,9 @@
+https://piquette.io {
+  tls ackleymi@gmail.com
+  rewrite {
+    to {path} {path}/ index.html
+  }
+  header / Cache-Control "no-cache"
+  log stdout
+  errors stdout
+}
