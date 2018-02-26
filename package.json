@@ -1,0 +1,27 @@
+{
+  "name": "piquette",
+  "version": "0.0.1",
+  "description": "piquette documentation site",
+  "homepage": "https://github.com/piquette/piquette#readme",
+  "author": "Michael Ackley",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piquette/piquette.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piquette/piquette/issues"
+  },
+  "devDependencies": {
+    "parallelshell": "^2.0.0",
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+    "dev": "npm run clean:css && parallelshell 'npm run start' 'npm run watch'",
+    "clean": "rm -rf node_modules && npm run clean:css",
+    "clean:css": "rm -f static/css/main.min.css",
+    "start": "hugo server --forceSyncStatic --port 8080",
+    "release": "rm -rf public && stylus -c static/style/index.styl --out static/css/main.min.css && hugo --ignoreCache",
+    "watch": "stylus -w -c static/style/index.styl --out static/css/main.min.css"
+  }
+}

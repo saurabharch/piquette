@@ -1,20 +1,22 @@
 baseURL = "https://piquette.io/"
 languageCode = "en-us"
 title = "Piquette"
-theme = "minimal"
+googleAnalytics = ""
 
+### -------------------------------
+# Site-wide params.
+### -------------------------------
 [params]
-    author = "Piquette"
-    description = "A place for financial tools."
-    githubUsername = "#"
-    accent = "#002244"
-    showBorder = true
-    backgroundColor = "#C5CEDA"
-    font = "Work Sans" # should match the name on Google Fonts!
+    description = "Open source project portal"
+    githubUsername = "piquette"
+    font = "Raleway" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
     highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
 
+### -------------------------------
+# Main menu.
+### -------------------------------
 [[menu.main]]
     url = "/"
     name = "Home"
@@ -43,3 +45,8 @@ theme = "minimal"
     url = "https://github.com/piquette/"
     name = "github"
     weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/michael_ack/"
+    name = "twitter"
+    weight = 3

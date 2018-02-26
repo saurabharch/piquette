@@ -1,5 +1,7 @@
 https://piquette.io {
-  tls ackleymi@gmail.com
+  tls ackleymi@gmail.com {
+    dns route53
+  }
   rewrite {
     to {path} {path}/ index.html
   }
