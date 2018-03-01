@@ -1,9 +1,100 @@
-{{ partial "header" . }}
-<main>
-  <div class="intro">
-    {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
-    <h1>{{ .Site.Title }}</h1>
-    <h2>{{ markdownify .Site.Params.Description }}</h2>
-  </div>
-</main>
-{{ partial "footer" . }}
+{{ partial "global/header" . }}
+<div class="section section-hero bg-gray">
+    <div id="overview" class="grid-hero container grid-lg text-center">
+        <div class="pq-brand">
+            <a href="/" class="pq-logo">
+                <img src="img/logo.svg" alt="PQ">
+                <h2>PIQUETTE</h2>
+            </a>
+        </div>
+        <h1>Open source finance</h1>
+        <h2>A <u>careful</u> and <u>considered</u> approach - in the parlance of our times</h2>
+        <div class="columns">
+            <div class="column col-4 col-xs-12">
+                <a href="/projects/">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="card-title">Projects > </span>
+                        </div>
+                        <div class="card-body">
+                            Simple to understand market data libraries in modern languages
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column col-4 col-xs-12">
+                <a href="/research/">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="card-title">Research > </span>
+                        </div>
+                        <div class="card-body">
+                            Ramblings backed by data science. Questions and honest attempts to answer them
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column col-4 col-xs-12">
+                <a href="/snippets/">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <span class="card-title">Code Snippets ></span>
+                        </div>
+                        <div class="card-body">
+                            Odds and ends
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-features bg-primary text-light text-center">
+    <div class="container grid-lg">
+        <h2>Why is this a thing?</h2>
+        <div class="columns">
+            <div class="column col-10 col-sm-12 col-mx-auto text-left">
+                <p class="text-secondary">Financial applications are commonly portrayed as boring in most software-development circles. We'd like to use data and transparency to shine a light on the more interesting aspects of open-source finance, explain some of the finer points
+                    in accessible language, and provision some free software in the process. Enjoy!</p>
+            </div>
+            <div class="column col-10 col-sm-12 col-mx-auto">
+                <a href="https://github.com/piquette" class="btn btn-lg" target="_blank">See Github ></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-updates bg-gray">
+    <div class="container grid-lg">
+        <div class="columns">
+            <div class="column col-4 col-xs-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title h6">finance-go</div>
+                    </div>
+                    <div class="card-body">
+                        The most feature-complete financial markets library in Go.
+                    </div>
+                    <div class="card-footer">
+                        <a href="/projects/" class="btn btn-primary">View docs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-4 col-xs-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title h6">qtrn</div>
+                    </div>
+                    <div class="card-body">
+                        Quotes on thousands of U.S financial instruments in your terminal instantly.
+                    </div>
+                    <div class="card-footer">
+                        <a href="/projects/" class="btn btn-primary">Install</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "global/footer" . }}

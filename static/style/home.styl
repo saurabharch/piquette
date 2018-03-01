@@ -1,0 +1,137 @@
+.pq-brand
+  color: $theme-dark
+  left: 1.5rem
+  position: fixed
+  top: .85rem
+
+.pq-brand .pq-logo
+  align-items: center
+  border-radius: .1rem
+  display: inline-flex
+  display: -ms-inline-flexbox
+  -ms-flex-align: center
+  height: 2rem
+  padding: 1px
+  width: auto
+
+.pq-brand .pq-logo:focus,
+.pq-brand .pq-logo:hover
+  text-decoration: none
+
+.pq-brand .pq-logo img
+  display: inline
+  height: auto
+  width: 3.0rem
+
+.pq-brand .pq-logo h2
+  display: inline
+  font-size: .8rem
+  font-weight: 700
+  line-height: 1.5rem
+  margin-bottom: 0
+
+.grid-hero .column
+  border-radius: .2rem
+  a:hover
+    text-decoration: none
+  &:hover
+    background-color: $app-grey-light
+
+.section-hero
+  padding: 1rem .5rem
+
+.section-hero .pq-brand
+  position: absolute
+  top: .85rem
+
+.section-hero .pq-brand h2
+  color: $theme-dark
+
+.section-hero .column
+  a:hover
+    border-color: #bbb
+  padding: .4rem
+
+.section-updates
+  padding: 4.5rem .5rem 3.5rem .5rem
+
+.section-updates .card
+  border: 0
+  color: #727e96
+  margin-bottom: 1rem
+
+.section-features
+  padding: 4.5rem .5rem
+
+.section-features .column
+  padding: .4rem
+
+.section-footer
+  color: #acb3c2
+  padding: 1.8rem .75rem 1rem .75rem
+  position: relative
+  z-index: 200
+
+.section-footer a
+  color: #667189
+
+.grid-hero
+  padding-bottom: 2rem
+  padding-top: 6rem
+
+.grid-hero h1
+  color: #50596c
+  font-size: 1.6rem
+  margin-bottom: 1.5rem
+
+.grid-hero h2
+  color: #5b657a
+  font-size: .9rem
+  font-weight: 400
+  line-height: 1.5rem
+  margin-bottom: 1.5rem
+
+.grid-hero h2 u
+  border-bottom: .1rem solid currentColor
+  padding-bottom: .05rem
+  text-decoration: none
+
+.grid-hero .card
+  background: none
+  border: 0
+  color: #727e96
+  padding: .5rem
+
+.grid-hero .card .card-title
+  color: $theme-dark
+  font-size: .9rem
+  margin-bottom: 0
+
+
+@media (max-width: 960px)
+  .section-hero .s-brand
+    height: 5rem
+    padding: 1.5rem .5rem
+    text-align: center
+    width: 100%
+
+  .section-hero .s-brand .s-logo
+    height: auto
+
+  .section-hero .s-brand img
+    height: 3.2rem
+    width: 3.2rem
+
+  .section-hero .s-brand h2
+    display: none
+
+
+@media (max-width: 600px)
+  .grid-hero h2
+    font-size: .9rem
+
+  .grid-hero .card
+    padding: 0
+
+  .grid-hero .pq-brand
+    left: 1rem

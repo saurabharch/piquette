@@ -1,23 +1,23 @@
-<div class="item">
-  {{ $.Scratch.Set "link" .RelPermalink }}
-  {{ with .Params.repo }}
-    {{ $repoHost := default "github" $.Params.repoHost }}
-    {{ if eq "github" $repoHost }}
-      {{ printf "https://github.com/%s/%s/" $.Site.Params.githubUsername . | $.Scratch.Set "link" }}
-    {{ else if eq "gitlab" $repoHost }}
-      {{ printf "https://gitlab.com/%s/%s/" $.Site.Params.gitlabUsername . | $.Scratch.Set "link" }}
-    {{ else if eq "bitbucket" $repoHost }}
-      {{ printf "https://bitbucket.org/%s/%s/" $.Site.Params.bitbucketUsername . | $.Scratch.Set "link" }}
-    {{ end }}
-  {{ end }}
-  {{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
+<div class="list-item">
+    <br> {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }} {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
+    <div class="list-item-title">
+        <div class="list-item-title-left">
+            <a href="{{ .RelPermalink }}">
+                <h4>{{ .Title }}</h4>
+            </a>
+        </div>
+        <div class="list-item-title-right">
+            <p><i class="fas fa-code"></i> {{ .Params.code_lang }}</p>
+        </div>
+    </div>
+    <div class="list-item-body">
+        <div class="list-item-body-info">
+            <i class="fas fa-tags"></i> {{ range .Params.tags }}
+            <span class="chip">
+                    <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><span class="hash">#</span>{{ . }}</a>
 
-  {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }}
-  {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
-
-  <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
-  <h5>{{ $.Scratch.Get "subtitle" }}</h5>
-  {{ range .Params.tags }}
-  <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><kbd class="item-tag">{{ . }}</kbd></a>
-  {{ end }}
+            </span> {{ end }}
+        </div>
+        <div class="list-item-body-info">{{ $.Scratch.Get "subtitle" }}</div>
+    </div>
 </div>

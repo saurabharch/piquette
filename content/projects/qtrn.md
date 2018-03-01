@@ -1,8 +1,9 @@
 ---
-title: "Project 2"
-description: "Consectetur adipiscing elit"
+title: "qtrn"
+description: "CLI tool for market quotes."
 repo: "#" # delete this line if you want blog-like posts for projects
-tags: ["html", "css", "js"]
+tags: ["golang", "cli"]
 weight: 2
 draft: false
+code_lang: "go"
 ---
