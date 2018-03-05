@@ -1,0 +1,13 @@
+{{ partial "global/header" . }}
+<div class="pq-container off-canvas off-canvas-sidebar-show">
+    {{ partial "menus/sidebar" . }}
+    <div id="content" class="pq-content off-canvas-content">
+        <div id="responsive" class="container">
+            {{ partial "menus/breadcrumb" . }} {{ partial "content/article" . }}
+            <!-- related posts with the same tags -->
+            {{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "==" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }} {{ if $related }}
+            <h4>Related</h4>
+            {{ range $related }} {{ partial "list-item" . }} {{ end }} {{ end }}
+        </div>
+    </div>
+</div>

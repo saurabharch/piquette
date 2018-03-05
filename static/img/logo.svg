@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-hex</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="300" height="300"></rect>
+        <g id="Group" transform="translate(29.000000, 29.000000)">
+            <path d="" id="Path-2" stroke="#1DA2BD" stroke-width="2"></path>
+            <polyline id="Path-3" stroke="#1DA2BD" stroke-width="2" points="97.3265878 25.2021211 145.428182 218.498489 24.7759597 92.7837153 192.518947 52.0080052"></polyline>
+            <polyline id="Path-4" stroke="#1DA2BD" stroke-width="2" points="217.096173 148.277391 49.9247986 189.461846 192.906676 52.2150045 146.356001 217.617954"></polyline>
+            <path d="M217.121392,148.158655 L24.9451317,92.5325841" id="Path-5" stroke="#1DA2BD" stroke-width="2"></path>
+            <path d="M98.0568646,26.2255592 L216.236653,147.279171" id="Path-6" stroke="#1DA2BD" stroke-width="2"></path>
+            <path d="M97.9959206,26.4031373 L51.7699294,187.811105" id="Path-7" stroke="#1DA2BD" stroke-width="2"></path>
+            <polygon id="Polygon" stroke="#02303A" stroke-width="8" transform="translate(121.221762, 121.221762) rotate(-14.000000) translate(-121.221762, -121.221762) " points="121.221762 21.2217622 207.824303 71.2217622 207.824303 171.221762 121.221762 221.221762 34.6192218 171.221762 34.6192218 71.2217622"></polygon>
+        </g>
+    </g>
+</svg>

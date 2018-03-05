@@ -1,0 +1,238 @@
+.pq-content
+  -ms-flex: 1 1 auto
+  flex: 1 1 auto
+  width: calc(100vw - 12rem)
+
+.pq-content.off-canvas-content
+  padding: 0 3.5rem !important
+
+.pq-content > .container
+  margin-left: 0
+  max-width: 800px
+  padding-bottom: 1.5rem
+
+.pq-content .anchor
+  color: #6362dc
+  height: 0
+  margin-left: -2em
+  overflow: hidden
+  padding: 0 1em
+  position: absolute
+  text-align: center
+  width: 0
+  z-index: 100
+
+.pq-content .anchor:focus,
+.pq-content .anchor:hover
+  box-shadow: none
+  height: auto
+  text-decoration: none
+  width: 2em
+
+.pq-content .s-title,
+.pq-content .s-subtitle
+  color: #414857
+  line-height: 1.8rem
+  margin-bottom: 0
+  padding-bottom: 1rem
+  padding-top: 1rem
+  position: static
+
+@supports ((position: -webkit-sticky) or (position: sticky))
+  .pq-content .s-title,
+  .pq-content .s-subtitle
+    position: sticky
+    position: -webkit-sticky
+    top: 0
+    z-index: 100
+
+  .pq-content .s-title::before,
+  .pq-content .s-subtitle::before
+    background: #fff
+    bottom: 0
+    content: ""
+    display: block
+    left: -10px
+    position: absolute
+    right: -10px
+    top: -5px
+    z-index: -1
+
+.pq-content .s-title:hover .anchor,
+.pq-content .s-subtitle:hover .anchor
+  height: auto
+  width: 1em
+
+.pq-content .s-title + .pq-note,
+.pq-content .s-subtitle + .pq-note
+  margin-top: .4rem
+
+.pq-content .pq-note
+  margin: 1.5rem 0
+
+.pq-content .pq-ad
+  background: #f8f9fa
+  border-radius: .1rem
+  display: inline-block
+  padding: .4rem
+  position: relative
+
+.pq-content .pq-ad::before
+  color: #acb3c2
+  content: "AD"
+  font-size: .7rem
+  position: absolute
+  right: .4rem
+  top: .1rem
+
+.pq-content .pq-ad.pq-ad-sidebar::before
+  content: none
+
+.pq-content .carbon-wrap .carbon-img
+  display: block
+
+.pq-content .carbon-wrap .carbon-text
+  color: #667189
+  display: block
+  font-size: .7rem
+
+.pq-content .carbon-poweredby
+  color: #acb3c2
+  font-size: .7rem
+
+.pq-content .column
+  padding: .4rem
+
+.pq-content .pq-block
+  border-radius: .1rem
+  padding: .4rem
+
+.pq-content .pq-block.bg-gray
+  background: #f0f1f4
+
+.pq-content .pq-shape
+  height: 4.8rem
+  line-height: 1.2rem
+  padding: 1.8rem 0
+  width: 4.8rem
+
+.pq-content .pq-dot
+  border-radius: 50%
+  display: inline-block
+  height: .5rem
+  padding: 0
+  width: .5rem
+
+.pq-content .pq-table th,
+.pq-content .pq-table td
+  padding: .75rem .25rem
+
+.pq-content .pq-color
+  border-radius: .1rem
+  margin: .25rem 0
+  padding: .5rem
+
+.pq-content .pq-color .color-subtitle
+  font-size: .7rem
+  opacity: .75
+
+.pq-content .code
+  color: #667189
+
+.pq-content .code .com
+  color: #acb3c2
+
+.pq-content .code .tag
+  color: $theme-dark
+
+.pq-content .code .atn
+  color: #667189
+
+.pq-content .code .atv
+  color: #e06870
+
+.pq-content .code[data-lang="Bash"] .tag
+  margin-right: 1em
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.pq-content .panel
+  height: 75vh
+
+.pq-content .panel .tile
+  margin: .75rem 0
+
+.pq-content .parallax
+  margin: 2rem auto
+
+.pq-content .form-autocomplete .menu
+  position: static
+
+.pq-content .example-tile-icon
+  align-content: space-around
+  align-items: center
+  background: $theme-dark
+  border-radius: .1rem
+  color: #fff
+  display: flex
+  display: -ms-flexbox
+  -ms-flex-align: center
+  -ms-flex-line-pack: distribute
+  font-size: 1.2rem
+  height: 2rem
+  width: 2rem
+
+.pq-content .example-tile-icon .icon
+  margin: auto
+
+.pq-content .comparison-slider
+  height: auto
+  padding-bottom: 56.2222%
+
+.pq-content .comparison-slider .filter-grayscale
+  filter: grayscale(75%)
+
+.pq-content .off-canvas
+  position: relative
+
+.pq-content .off-canvas .off-canvas-toggle
+  left: .4rem
+  position: absolute
+  top: .4rem
+  z-index: 1
+
+.pq-content .terms .card
+  &:hover
+    border-color: $theme-green
+
+
+@media (min-width: 960px)
+  .pq-content
+    margin-left: 11rem !important
+
+@media (max-width: 960px)
+  .pq-content.off-canvas-content
+    min-width: auto
+    padding: 4rem 1.5rem .5rem !important
+    width: 100%
+
+  .pq-content .s-title,
+  .pq-content .s-subtitle
+    padding-top: 5rem
+    position: static
+
+  .pq-content .s-title::before,
+  .pq-content .s-subtitle::before
+    content: none
+
+@media (max-width: 600px)
+  .pq-content.off-canvas-content
+    padding: 4rem .5rem .5rem
+
+  .pq-content .pq-block
+    padding: .4rem .1rem
+
+  .pq-content .anchor
+    display: none

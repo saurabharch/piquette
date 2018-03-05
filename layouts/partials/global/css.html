@@ -1,0 +1,17 @@
+<!-- Favicons. -->
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicons/favicon.ico">
+<link rel="icon" href="{{ .Site.BaseURL }}img/favicons/apple-icon-60.png">
+
+<!-- Stylesheets. -->
+{{ $site := "css/site.min.css" }} {{ $spectre := "css/spectre.min.css" }} {{ $spectreIcons := "css/spectre-icons.min.css" }} {{ $spectreExp := "css/spectre-exp.min.css" }}
+<link rel="stylesheet" href="{{ $spectre | relURL }}">
+<link rel="stylesheet" href="{{ $spectreIcons | relURL }}">
+<link rel="stylesheet" href="{{ $spectreExp | relURL }}">
+<link rel="stylesheet" href="{{ $site | relURL }}">
+
+<!-- Code highlighting. -->
+{{ if .Site.Params.highlight | default false }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ .Site.Params.highlightStyle | default " default " }}.min.css"> {{ end }}
+
+<!-- Font Awesome. -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>

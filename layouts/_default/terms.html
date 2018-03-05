@@ -1,0 +1,26 @@
+ {{ partial "global/header" . }}
+<div class="pq-container off-canvas off-canvas-sidebar-show">
+    {{ partial "menus/sidebar" . }}
+    <div id="content" class="pq-content off-canvas-content">
+        <div id="responsive" class="container grid-lg">
+            {{ partial "menus/breadcrumb" . }}
+            <div class="columns terms">
+                {{ range .Data.Terms.ByCount }}
+                <div class="column col-4 col-xs-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="{{ .Term | urlize }}">
+                                <span class="hash">#</span>{{ .Term }}
+                            </a>
+                        </div>
+                        <div class="card-body text-gray">
+                            {{ $ct := .Count }} {{if eq $ct 1 }} {{ $ct }} page {{ else }} {{ $ct }} pages {{ end }}
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>

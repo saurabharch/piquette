@@ -1,0 +1,23 @@
+<div class="list-item">
+    <br> {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }} {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
+    <div class="list-item-title">
+        <div class="list-item-title-left">
+            <a href="{{ .RelPermalink }}">
+                <h4>{{ .Title }}</h4>
+            </a>
+        </div>
+        <div class="list-item-title-right">
+            <p><i class="fas fa-code"></i> {{ .Params.code_lang }}</p>
+        </div>
+    </div>
+    <div class="list-item-body">
+        <div class="list-item-body-info">
+            <i class="fas fa-tags"></i> {{ range .Params.tags }}
+            <span class="chip">
+                    <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><span class="hash">#</span>{{ . }}</a>
+
+            </span> {{ end }}
+        </div>
+        <div class="list-item-body-info">{{ $.Scratch.Get "subtitle" }}</div>
+    </div>
+</div>

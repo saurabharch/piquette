@@ -1,45 +1,43 @@
 baseURL = "https://piquette.io/"
 languageCode = "en-us"
 title = "Piquette"
-theme = "minimal"
+googleAnalytics = ""
 
+### -------------------------------
+# Site-wide params.
+### -------------------------------
 [params]
-    author = "Piquette"
-    description = "A place for financial tools."
-    githubUsername = "#"
-    accent = "#002244"
-    showBorder = true
-    backgroundColor = "#C5CEDA"
-    font = "Work Sans" # should match the name on Google Fonts!
+    enableRobotsTXT = true
+    pluralizeListTitles = false
+    description = "Open source project portal"
+    githubUsername = "piquette"
     highlight = true
     highlightStyle = "solarized-dark"
     highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
 
+### -------------------------------
+# Main menu.
+### -------------------------------
 [[menu.main]]
-    url = "/"
-    name = "Home"
-    weight = 1
-
-[[menu.main]]
-    url = "/post/"
-    name = "Posts"
-    weight = 2
-
-[[menu.main]]
-    url = "/project/"
+    url = "/projects/"
     name = "Projects"
-    weight = 3
-
-# Social icons to be shown on the right-hand side of the navigation bar
-# The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
-
-[[menu.icon]]
-    url = "mailto:me@example.com"
-    name = "envelope-o"
     weight = 1
+    identifier = "folder-open"
 
-[[menu.icon]]
-    url = "https://github.com/piquette/"
-    name = "github"
+[[menu.main]]
+    url = "/research/"
+    name = "Research"
     weight = 2
+    identifier = "flask"
+
+[[menu.main]]
+    url = "/snippets/"
+    name = "Snippets"
+    weight = 3
+    identifier = "code-branch"
+
+[[menu.main]]
+    url = "/tags/"
+    name = "Tags"
+    weight = 4
+    identifier = "tags"

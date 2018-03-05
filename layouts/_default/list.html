@@ -1,0 +1,10 @@
+{{ partial "global/header" . }}
+<div class="pq-container off-canvas off-canvas-sidebar-show">
+    {{ partial "menus/sidebar" . }}
+    <div id="content" class="pq-content off-canvas-content">
+        {{ partial "menus/breadcrumb" . }}
+        <div id="responsive" class="content-list container">
+            {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }} {{ partial "paginator" . }}
+        </div>
+    </div>
+</div>

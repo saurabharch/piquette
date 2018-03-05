@@ -1,0 +1,29 @@
+.container
+    padding-left: 0
+.content-list
+    .list-item
+        padding: .6rem
+        border-left: 4px solid transparent
+        &-title
+            align-items: center
+            border-bottom: .05rem solid #e7e9ed
+            display: flex
+            display: -ms-flexbox
+            -ms-flex-align: center
+            -ms-flex-wrap: wrap
+            flex-wrap: wrap
+            list-style: none
+            margin: .2rem 0 .15rem 0
+            &-left
+                margin-top: 0
+            &-right 
+                margin-top: 0
+                -ms-flex: 1 0 auto
+                flex: 1 0 auto
+                text-align: right
+        &-body
+            padding-left: .1rem
+            &-info 
+                padding: .5rem
+        &:hover
+            border-left: 4px solid $theme-green
