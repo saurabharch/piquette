@@ -1,0 +1,67 @@
+html, body
+  svg
+    margin-right: .2rem
+  -webkit-font-smoothing: antialiased
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  text-rendering: optimizeLegibility
+  text-size-adjust: 100%
+  height: 100%
+  margin: 0
+
+.version::after
+  content: "0.5.1"
+
+.off-canvas .off-canvas-toggle
+  font-size: 1rem
+  left: 1.5rem
+  position: fixed
+  top: 1rem
+
+
+.pq-navbar
+  height: 3.8rem
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 100
+
+.pq-navbar .btn
+  position: absolute
+  right: 1.5rem
+  top: 1rem
+
+.pq-footer
+  color: #acb3c2
+  padding: .5rem .5rem 1.5rem .5rem
+
+.pq-footer a
+  color: #667189
+
+.btn .feather
+  height: 1rem
+  vertical-align: middle
+
+@media (max-width: 960px)
+  .off-canvas .off-canvas-toggle
+    z-index: 300
+
+  .pq-navbar
+    -webkit-backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px)
+    background: rgba(248, 249, 250, .65)
+    left: 0
+
+
+@media (max-width: 600px)
+  .off-canvas .off-canvas-toggle
+    left: .5rem
+
+  .pq-navbar .btn
+    right: 1rem
+
+@media (min-width: 1366px)
+  .pq-ad.pq-ad-sidebar
+    bottom: 1rem
+    position: fixed
+    right: 1rem
+    width: 7.3rem
