@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
      
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
+    <meta name="subject" content="Open source financial software">
+    <meta name="keywords" content="open, souce, financial, finance, software, go, golang" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="https://github.com/piquette/">
-    <title>Piquette</title>
     
-<link rel="shortcut icon" href="https://piquette.io/img/favicons/favicon.ico">
-<link rel="icon" href="https://piquette.io/img/favicons/apple-icon-60.png">
-
+      
+      
+        <title>Piquette | finance-go</title>
+      
+    
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/img/favicons/site.webmanifest">
+<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
    
+<link rel="stylesheet" href="/css/site.min.css">
 <link rel="stylesheet" href="/css/spectre.min.css">
 <link rel="stylesheet" href="/css/spectre-icons.min.css">
 <link rel="stylesheet" href="/css/spectre-exp.min.css">
-<link rel="stylesheet" href="/css/site.min.css">
-
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
 
-
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+ 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/R.min.js"></script> 
     <script>hljs.initHighlightingOnLoad();</script>
 
 
@@ -40,19 +49,13 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.48" />  
 
-    <meta name="generator" content="Hugo 0.24.1" />
-    
-    
+</head>
 
-  </head>
-
-  
-  <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-
-  <body>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<body>
      
 
 <div class="pq-container off-canvas off-canvas-sidebar-show">
@@ -118,65 +121,913 @@
             <ol class="breadcrumb">
          
 
-
 <li class="breadcrumb-item ">
-    <a href="https://piquette.io/">Home</a>
+  
+  
+  <a href="https://piquette.io/">Home</a>
 </li>
  
 
-
 <li class="breadcrumb-item ">
-    <a href="https://piquette.io/projects/">Projects</a>
+  
+  
+  <a href="https://piquette.io/projects/">Projects</a>
 </li>
  
-
 
 <li class="breadcrumb-item active">
-    <a href="https://piquette.io/projects/finance-go/">finance-go</a>
+  
+  
+  <a href="https://piquette.io/projects/finance-go/">finance-go</a>
 </li>
 
 </ol>
 
 
-<div class="divider"></div> <br>    
-<ul class="tab">
-    <li class="tab-item active">
-        <a href="#">
-            Preview
-        </a>
-    </li>
-    <li class="tab-item">
-        <a href="#">
-            Markdown
-        </a>
-    </li>
-    <li class="tab-item tab-action">
-        <div class="input-group input-inline text-gray">
-            <p><i class="fas fa-calendar-alt"></i> Financial markets data SDK</p>
-        </div>
-    </li>
-</ul>
-<br>
-<h3>finance-go</h3>
-<br>
-<div>
+<div class="divider"></div>
     
-    <span class="chip">
-    <a href="https://piquette.io/tags/golang">golang</a>
-  </span> 
-    <span class="chip">
-    <a href="https://piquette.io/tags/finance">finance</a>
-  </span> 
-    <span class="chip">
-    <a href="https://piquette.io/tags/market-data">market-data</a>
-  </span> 
-    <br>
-    <br>
-    <br>
+
+<div class="text-justify">
+
+<p><br>
+<a href="https://github.com/piquette/finance-go"><img src="https://img.shields.io/github/forks/piquette/finance-go.svg?style=social&amp;label=Fork" alt="GitHub forks" /></a>
+<a href="https://github.com/piquette/finance-go"><img src="https://img.shields.io/github/stars/piquette/finance-go.svg?style=social&amp;label=Stars" alt="GitHub stars" /></a></p>
+
+<p><a href="http://godoc.org/github.com/piquette/finance-go"><img src="http://img.shields.io/badge/godoc-reference-blue.svg" alt="GoDoc" /></a> <a href="https://travis-ci.org/piquette/finance-go"><img src="https://travis-ci.org/piquette/finance-go.svg?branch=master" alt="Build Status" /></a> <a href="https://coveralls.io/github/piquette/finance-go?branch=master"><img src="https://coveralls.io/repos/github/piquette/finance-go/badge.svg?branch=master" alt="Coverage Status" /></a></p>
+
+<p><a href="https://github.com/piquette/finance-go/releases"><img src="https://img.shields.io/github/release/piquette/finance-go.svg" alt="GitHub release" /></a> <a href="https://github.com/piquette/finance-go/issues"><img src="https://img.shields.io/github/issues-raw/piquette/finance-go.svg" alt="GitHub issues" /></a></p>
+
+<h3 class="s-title" id="purpose">1. Purpose<a class="anchor" href="#purpose" aria-hidden="true">#</a></h3>
+
+<p>This go library aims to provide a go application with access to current and historical financial markets data in streamlined, well-formatted structures. Currently, the core features of this library are</p>
+
+<ul>
+<li><a href="#quote">Detailed realtime quotes across most instruments (minus fixed-income)</a></li>
+<li><a href="#chart">Lists of OHLCV quotes for various time frames and aggregations</a></li>
+<li><a href="#options">Equity options series for most expirations</a></li>
+</ul>
+
+<p><br></p>
+
+<h3 class="s-title"id="basics">2. Basics<a class="anchor" href="#basics" aria-hidden="true">#</a></h3>
+
+<p>This package is actually a composed of a collection of packages, each with a specific use case. The good news is that they all follow a similar convention and share embedded structs - with some exceptions.</p>
+
+<p>For starters, the result of a request to <code>quote.Get(symbol string)</code> is a <code>finance.Quote</code> struct, which looks like this -</p>
+
+<pre><code class="language-go">// Quote is the basic quote structure shared across
+// asset classes.
+//
+// Contains most fields that are common across all
+// possible assets.
+type Quote struct {
+  // Quote classifying fields.
+  Symbol      string
+  MarketState MarketState
+  QuoteType   QuoteType
+  ShortName   string
+
+  // Regular session quote data.
+  RegularMarketChangePercent float64
+  RegularMarketPreviousClose float64
+  RegularMarketPrice         float64
+  RegularMarketTime          int
+  RegularMarketChange        float64
+  RegularMarketOpen          float64
+  RegularMarketDayHigh       float64
+  RegularMarketDayLow        float64
+  RegularMarketVolume        int
+
+  // Quote depth.
+  Bid     float64
+  Ask     float64
+  BidSize int
+  AskSize int
+
+  // Pre-market quote data.
+  PreMarketPrice         float64
+  PreMarketChange        float64
+  PreMarketChangePercent float64
+  PreMarketTime          int
+
+  // Post-market quote data.
+  PostMarketPrice         float64
+  PostMarketChange        float64
+  PostMarketChangePercent float64
+  PostMarketTime          int
+
+  // 52wk ranges.
+  FiftyTwoWeekLowChange         float64
+  FiftyTwoWeekLowChangePercent  float64
+  FiftyTwoWeekHighChange        float64
+  FiftyTwoWeekHighChangePercent float64
+  FiftyTwoWeekLow               float64
+  FiftyTwoWeekHigh              float64
+
+  // Averages.
+  FiftyDayAverage                   float64
+  FiftyDayAverageChange             float64
+  FiftyDayAverageChangePercent      float64
+  TwoHundredDayAverage              float64
+  TwoHundredDayAverageChange        float64
+  TwoHundredDayAverageChangePercent float64
+
+  // Volume metrics.
+  AverageDailyVolume3Month int
+  AverageDailyVolume10Day  int
+
+  // Quote meta-data.
+  QuoteSource               string
+  CurrencyID                string
+  IsTradeable               bool
+  QuoteDelay                int
+  FullExchangeName          string
+  SourceInterval            int
+  ExchangeTimezoneName      string
+  ExchangeTimezoneShortName string
+  GMTOffSetMilliseconds     int
+  MarketID                  string
+  ExchangeID                string
+}
+</code></pre>
+
+<p>The function <code>quote.Get(symbol string)</code> does not care what asset class the symbol requested belongs to - it will always return a <code>finance.Quote</code> struct with as many of the member fields populated as it could find.</p>
+
+<p>To get more specific, if you know your symbol is an equity, you can request a result with more information specific to an equity. For example, <code>equity.Get(symbol string)</code> will return the <code>finance.Equity</code> struct -</p>
+
+<pre><code class="language-go">// Equity represents a single equity quote.
+type Equity struct {
+  Quote
+  // Equity-only fields.
+  LongName                    string  
+  EpsTrailingTwelveMonths     float64
+  EpsForward                  float64
+  EarningsTimestamp           int     
+  EarningsTimestampStart      int     
+  EarningsTimestampEnd        int     
+  TrailingAnnualDividendRate  float64
+  DividendDate                int     
+  TrailingAnnualDividendYield float64
+  TrailingPE                  float64
+  ForwardPE                   float64
+  BookValue                   float64
+  PriceToBook                 float64
+  SharesOutstanding           int     
+  MarketCap                   int64   
+}
+</code></pre>
+
+<p>This struct has all the access to the fields in the embedded <code>finance.Quote</code> struct, and additional fields pertaining to equities.</p>
+
+<p>The same convention is used across all the following packages. For a more detailed quote, use the package that corresponds to the asset class of which your requested symbol belongs.</p>
+
+<ul>
+<li><a href="#quote">quote</a></li>
+<li><a href="#equity">equity</a></li>
+<li><a href="#etf">etf</a></li>
+<li><a href="#mutualfund">mutualfund</a></li>
+<li><a href="#option">option</a></li>
+<li><a href="#forex">forex</a></li>
+<li><a href="#future">future</a></li>
+<li><a href="#crypto">crypto</a></li>
+<li><a href="#index">index</a></li>
+</ul>
+
+<p><br></p>
+
+<h3 class="s-title"id="implementation">3. Implementation<a class="anchor" href="#implementation" aria-hidden="true">#</a></h3>
+
+<p>The following are explanations and examples of all the production-ready finance-go packages. You can selectively implement one - or all - to meet your application&rsquo;s needs.</p>
+
+<h4 class="s-title" id="quote"><i class="fas fa-folder"></i> quote<a class="anchor" href="#quote" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a realtime quote for any financial asset.</p>
+
+<h5 id="result">Result</h5>
+
+<pre><code class="language-go">// Quote is the basic quote structure shared across
+// asset classes.
+//
+// Contains most fields that are common across all
+// possible assets.
+type Quote struct {
+  // Quote classifying fields.
+  Symbol      string
+  MarketState MarketState
+  QuoteType   QuoteType
+  ShortName   string
+
+  // Regular session quote data.
+  RegularMarketChangePercent float64
+  RegularMarketPreviousClose float64
+  RegularMarketPrice         float64
+  RegularMarketTime          int
+  RegularMarketChange        float64
+  RegularMarketOpen          float64
+  RegularMarketDayHigh       float64
+  RegularMarketDayLow        float64
+  RegularMarketVolume        int
+
+  // Quote depth.
+  Bid     float64
+  Ask     float64
+  BidSize int
+  AskSize int
+
+  // Pre-market quote data.
+  PreMarketPrice         float64
+  PreMarketChange        float64
+  PreMarketChangePercent float64
+  PreMarketTime          int
+
+  // Post-market quote data.
+  PostMarketPrice         float64
+  PostMarketChange        float64
+  PostMarketChangePercent float64
+  PostMarketTime          int
+
+  // 52wk ranges.
+  FiftyTwoWeekLowChange         float64
+  FiftyTwoWeekLowChangePercent  float64
+  FiftyTwoWeekHighChange        float64
+  FiftyTwoWeekHighChangePercent float64
+  FiftyTwoWeekLow               float64
+  FiftyTwoWeekHigh              float64
+
+  // Averages.
+  FiftyDayAverage                   float64
+  FiftyDayAverageChange             float64
+  FiftyDayAverageChangePercent      float64
+  TwoHundredDayAverage              float64
+  TwoHundredDayAverageChange        float64
+  TwoHundredDayAverageChangePercent float64
+
+  // Volume metrics.
+  AverageDailyVolume3Month int
+  AverageDailyVolume10Day  int
+
+  // Quote meta-data.
+  QuoteSource               string
+  CurrencyID                string
+  IsTradeable               bool
+  QuoteDelay                int
+  FullExchangeName          string
+  SourceInterval            int
+  ExchangeTimezoneName      string
+  ExchangeTimezoneShortName string
+  GMTOffSetMilliseconds     int
+  MarketID                  string
+  ExchangeID                string
+}
+</code></pre>
+
+<h5 id="methods">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.Quote, error)</code> - single quote</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple quotes</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := quote.Get(&quot;AAPL&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;AAPL&quot;, &quot;GOOG&quot;, &quot;MSFT&quot;}
+iter := quote.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.Quote()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="equity"><i class="fas fa-folder"></i> equity<a class="anchor" href="#equity" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a realtime quote for an equity.</p>
+
+<h5 id="result-1">Result</h5>
+
+<pre><code class="language-go">// Equity represents a single equity quote.
+type Equity struct {
+  Quote
+  // Equity-only fields.
+  LongName                    string  
+  EpsTrailingTwelveMonths     float64
+  EpsForward                  float64
+  EarningsTimestamp           int     
+  EarningsTimestampStart      int     
+  EarningsTimestampEnd        int     
+  TrailingAnnualDividendRate  float64
+  DividendDate                int     
+  TrailingAnnualDividendYield float64
+  TrailingPE                  float64
+  ForwardPE                   float64
+  BookValue                   float64
+  PriceToBook                 float64
+  SharesOutstanding           int     
+  MarketCap                   int64   
+}
+</code></pre>
+
+<h5 id="methods-1">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.Equity, error)</code> - single equity</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple equities</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-1">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := equity.Get(&quot;AAPL&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;AAPL&quot;, &quot;GOOG&quot;, &quot;MSFT&quot;}
+iter := equity.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.Equity()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="etf"><i class="fas fa-folder"></i> etf<a class="anchor" href="#etf" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a realtime quote for an etf.</p>
+
+<h5 id="result-2">Result</h5>
+
+<pre><code class="language-go">// ETF represents a single etf quote.
+type ETF struct {
+  Quote
+  // MutualFund/ETF-only fields.
+  YTDReturn                    float64
+  TrailingThreeMonthReturns    float64
+  TrailingThreeMonthNavReturns float64
+}
+</code></pre>
+
+<h5 id="methods-2">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.ETF, error)</code> - single etf</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple etfs</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-2">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := etf.Get(&quot;SPY&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;SPY&quot;, &quot;QQQ&quot;, &quot;DIA&quot;}
+iter := etf.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.ETF()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="mutualfund"><i class="fas fa-folder"></i> mutualfund<a class="anchor" href="#mutualfund" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a quote for a mutual fund.</p>
+
+<h5 id="result-3">Result</h5>
+
+<pre><code class="language-go">// MutualFund represents a single mutual fund share quote.
+type MutualFund struct {
+  Quote
+  // MutualFund/ETF-only fields.
+  YTDReturn                    float64
+  TrailingThreeMonthReturns    float64
+  TrailingThreeMonthNavReturns float64
+}
+</code></pre>
+
+<h5 id="methods-3">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.MutualFund, error)</code> - single mutual fund</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple mutual funds</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-3">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := mutualfund.Get(&quot;FMAGX&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;FMAGX&quot;, &quot;FSPTX&quot;}
+iter := mutualfund.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.MutualFund()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="option"><i class="fas fa-folder"></i> option<a class="anchor" href="#option" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a quote for a single option contract.</p>
+
+<h5 id="result-4">Result</h5>
+
+<pre><code class="language-go">// Option represents a single option contract quote
+// for a specified strike and expiration.
+type Option struct {
+  Quote
+  // Options/Futures-only fields.
+  UnderlyingSymbol         string
+  OpenInterest             int
+  ExpireDate               int
+  Strike                   float64
+  UnderlyingExchangeSymbol string
+}
+</code></pre>
+
+<h5 id="methods-4">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.Option, error)</code> - single contract</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple contracts</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-4">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := option.Get(&quot;AMD180907C00011000&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;AMD180907C00011000&quot;, &quot;AMD180907C00011500&quot;}
+iter := option.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.Option()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="forex"><i class="fas fa-folder"></i> forex<a class="anchor" href="#forex" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a quote for a forex pair.</p>
+
+<h5 id="result-5">Result</h5>
+
+<pre><code class="language-go">// ForexPair represents a single forex currency pair quote.
+type ForexPair struct {
+  // Not much here...
+  Quote
+}
+</code></pre>
+
+<h5 id="methods-5">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.ForexPair, error)</code> - single quote</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple quotes</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-5">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := forex.Get(&quot;EURUSD=X&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;EURUSD=X&quot;, &quot;NZDUSD=X&quot;}
+iter := forex.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.ForexPair()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="future"><i class="fas fa-folder"></i> future<a class="anchor" href="#future" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a quote for a future contract.</p>
+
+<h5 id="result-6">Result</h5>
+
+<pre><code class="language-go">// Future represents a single futures contract quote
+// for a specified strike and expiration.
+type Future struct {
+  Quote
+  // Options/Futures-only fields.
+  UnderlyingSymbol         string
+  OpenInterest             int
+  ExpireDate               int
+  Strike                   float64
+  UnderlyingExchangeSymbol string
+  HeadSymbolAsString       string
+  IsContractSymbol         bool
+}
+</code></pre>
+
+<h5 id="methods-6">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.Future, error)</code> - single future contract</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple contracts</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-6">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := future.Get(&quot;CL=F&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;CL=F&quot;, &quot;GC=F&quot;}
+iter := future.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.Future()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="crypto"><i class="fas fa-folder"></i> crypto<a class="anchor" href="#crypto" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a quote for a cryptocurrency pair.</p>
+
+<h5 id="result-7">Result</h5>
+
+<pre><code class="language-go">// CryptoPair represents a single crypto currency pair quote.
+type CryptoPair struct {
+  Quote
+  // Cryptocurrency-only fields.
+  Algorithm           string
+  StartDate           int
+  MaxSupply           int
+  CirculatingSupply   int
+  VolumeLastDay       int
+  VolumeAllCurrencies int
+}
+</code></pre>
+
+<h5 id="methods-7">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.CryptoPair, error)</code> - single crypto pair</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple pairs</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-7">Example</h5>
+
+<pre><code class="language-go">// A single quote.
+// ---------------
+q, err := crypto.Get(&quot;BTC-USD&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple quotes.
+// ----------------
+symbols := []string{&quot;BTC-USD&quot;, &quot;XRP-USD&quot;}
+iter := crypto.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.CryptoPair()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="index"><i class="fas fa-folder"></i> index<a class="anchor" href="#index" aria-hidden="true">#</a></h4>
+
+<p>Provides access to an up-to-date measure of a market index.</p>
+
+<h5 id="result-8">Result</h5>
+
+<pre><code class="language-go">// Index represents a single market Index quote.
+// The term `quote` here doesn't really apply in
+// a practical sense, as indicies themselves are
+// by definition not tradable assets.
+type Index struct {
+  Quote
+}
+</code></pre>
+
+<h5 id="methods-8">Methods</h5>
+
+<ul>
+<li><code>func Get(symbol string) (*finance.Index, error)</code> - single index</li>
+<li><code>func List(symbols []string) *Iter</code> - multiple indicies</li>
+<li><code>func ListP(params *Params) *Iter</code> - granular control over request execution</li>
+</ul>
+
+<h5 id="example-8">Example</h5>
+
+<pre><code class="language-go">// A single index.
+// ---------------
+q, err := index.Get(&quot;^GSPC&quot;)
+if err != nil {
+  // Uh-oh!
+  panic(err)
+}
+// All good.
+fmt.Println(q)
+
+
+// Multiple indicies.
+// ----------------
+symbols := []string{&quot;^GSPC&quot;, &quot;^DJI&quot;}
+iter := index.List(symbols)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  q := iter.Index()
+  fmt.Println(q)
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="chart"><i class="fas fa-folder"></i> chart<a class="anchor" href="#chart" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a time-series of OHLCV quotes.</p>
+
+<h5 id="result-9">Result</h5>
+
+<pre><code class="language-go">// Iter is a structure containing results
+// and related metadata for a
+// yfin chart request.
+type Iter struct {
+  *iter.Iter
+}
+</code></pre>
+
+<h5 id="methods-9">Methods</h5>
+
+<ul>
+<li><code>func Get(params *Params) *Iter</code> - iterator of historical quotes</li>
+</ul>
+
+<p>Where <code>chart.Params</code> is</p>
+
+<pre><code class="language-go">// Params carries a context and chart information.
+type Params struct {
+  // Context access.
+  finance.Params
+  // Accessible fields.
+  Symbol   string // requested symbol
+  Start    *datetime.Datetime // start of the time period
+  End      *datetime.Datetime // end of the time period
+  Interval datetime.Interval // per-bar aggregation
+  IncludeExt bool // include extended-hours
+}
+</code></pre>
+
+<h5 id="example-9">Example</h5>
+
+<pre><code class="language-go">// Historical quotes for AAPL
+// ----------------
+p := &amp;chart.Params{
+  Symbol:   &quot;AAPL&quot;,
+  Start:    &amp;datetime.Datetime{Month: 1, Day: 1, Year: 2017},
+  End:      &amp;datetime.Datetime{Month: 1, Day: 1, Year: 2018},
+  Interval: datetime.OneDay
+}
+iter := chart.Get(p)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  b := iter.Bar()
+  fmt.Println(b)
+
+  // Meta-data for the iterator - (*finance.ChartMeta).
+  fmt.Println(iter.Meta())
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
+
+<h4 class="s-title" id="options"><i class="fas fa-folder"></i> options<a class="anchor" href="#options" aria-hidden="true">#</a></h4>
+
+<p>Provides access to a matrix of equity options for various time frames.</p>
+
+<h5 id="results">Results</h5>
+
+<pre><code class="language-go">// OptionsMeta is meta data associated with an options response.
+type OptionsMeta struct {
+  UnderlyingSymbol   string
+  ExpirationDate     int
+  AllExpirationDates []int
+  Strikes            []float64
+  HasMiniOptions     bool
+  Quote              *Quote
+}
+
+// Straddle is a put/call straddle for a particular strike.
+type Straddle struct {
+  Strike float64  
+  Call   *Contract
+  Put    *Contract
+}
+
+// Contract is a struct containing a single option contract, usually part of a chain.
+type Contract struct {
+  Symbol            string
+  Strike            float64
+  Currency          string
+  LastPrice         float64
+  Change            float64
+  PercentChange     float64
+  Volume            int
+  OpenInterest      int
+  Bid               float64
+  Ask               float64
+  Size              string
+  Expiration        int
+  LastTradeDate     int
+  ImpliedVolatility float64
+  InTheMoney        bool
+}
+</code></pre>
+
+<h5 id="methods-10">Methods</h5>
+
+<ul>
+<li><code>func GetStraddle(underlier string) *StraddleIter</code> - iterator of options straddles for the front month</li>
+<li><code>func GetStraddleP(params *Params) *StraddleIter</code> - iterator of options straddles for an expiration</li>
+</ul>
+
+<p>Where <code>options.Params</code> is</p>
+
+<pre><code class="language-go">// Params carries a context and options information.
+type Params struct {
+  // Context access.
+  finance.Params
+  // Accessible fields.
+  UnderlyingSymbol string             
+  Expiration *datetime.Datetime
+}
+</code></pre>
+
+<h5 id="example-10">Example</h5>
+
+<pre><code class="language-go">// Options for AAPL
+// ----------------
+iter := options.GetStraddle(&quot;AAPL&quot;)
+
+// Iterate over results. Will exit upon any error.
+for iter.Next() {
+  s := iter.Straddle()
+  fmt.Println(s)
+
+  // Meta-data for the iterator - (*finance.OptionsMeta).
+  fmt.Println(iter.Meta())
+}
+
+// Catch an error, if there was one.
+if iter.Err() != nil {
+  // Uh-oh!
+  panic(err)
+}
+</code></pre>
 </div>
-<br>
-<div class="text-justify"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
+
+
             
              
         </div>

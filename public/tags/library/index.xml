@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Library on Piquette</title>
+    <link>https://piquette.io/tags/library/</link>
+    <description>Recent content in Library on Piquette</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://piquette.io/tags/library/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>finance-go</title>
+      <link>https://piquette.io/projects/finance-go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://piquette.io/projects/finance-go/</guid>
+      <description>1. Purpose# This go library aims to provide a go application with access to current and historical financial markets data in streamlined, well-formatted structures. Currently, the core features of this library are
+ Detailed realtime quotes across most instruments (minus fixed-income) Lists of OHLCV quotes for various time frames and aggregations Equity options series for most expirations  
+2. Basics# This package is actually a composed of a collection of packages, each with a specific use case.</description>
+    </item>
+    
+  </channel>
+</rss>

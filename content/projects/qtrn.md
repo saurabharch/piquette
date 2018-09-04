@@ -1,6 +1,6 @@
 ---
 title: "qtrn"
-description: "CLI tool for market quotes."
+description: "Command-line tool for displaying quotes and writing csv files"
 repo: "#" # delete this line if you want blog-like posts for projects
 tags: ["golang", "cli"]
 weight: 2

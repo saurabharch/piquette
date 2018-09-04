@@ -1315,10 +1315,10 @@ input:disabled+.form-icon {
 }
 
 code {
-    background: #fdf4f4;
+    background: #f0f1f4;
     border-radius: .1rem;
-    color: #e06870;
-    font-size: 85%;
+    color: #02303A;
+    font-size: 95%;
     line-height: 1.2;
     padding: .1rem .15rem
 }
@@ -1327,6 +1327,7 @@ code {
     border-radius: .1rem;
     color: #50596c;
     position: relative
+    padding: 1.2em 0.8em
 }
 
 .code::before {

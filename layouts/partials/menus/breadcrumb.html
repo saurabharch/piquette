@@ -4,9 +4,12 @@
 
 {{ define "breadcrumbnav" }} {{ if .p1.Parent }} {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 ) }} {{ else if not .p1.IsHome }} {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 ) }} {{ end }}
 
-
 <li class="breadcrumb-item {{ if eq .p1 .p2 }}active{{ end }}">
-    <a href="{{ .p1.Permalink }}">{{if eq .p1.Title "Piquette"}}Home{{else}}{{.p1.Title}}{{end}}</a>
+  {{ $crumb := .p1.Title }}
+  {{if eq $crumb "Researches"}}
+    {{ $crumb = "Research" }}
+  {{end}}
+  <a href="{{ .p1.Permalink }}">{{if eq $crumb "Piquette"}}Home{{else}}{{$crumb}}{{end}}</a>
 </li>
 {{ end }}
 <div class="divider"></div>

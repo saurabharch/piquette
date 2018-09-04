@@ -1,5 +1,16 @@
-<br> {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }} {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
-<ul class="tab">
+{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }} {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
+<!-- <h1>{{ .Title }}</h1>
+<div>
+    {{ range .Params.tags }}
+    <span class="chip">
+    <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+  </span> {{ end }}
+    <br>
+    <br>
+    <br>
+</div> -->
+<div class="text-justify">{{ .Content }}</div>
+<!-- <ul class="tab">
     <li class="tab-item active">
         <a href="#">
             Preview
@@ -12,21 +23,8 @@
     </li>
     <li class="tab-item tab-action">
         <div class="input-group input-inline text-gray">
-            <p><i class="fas fa-calendar-alt"></i> {{ $.Scratch.Get "subtitle" }}</p>
+            <p><i class="fab fa-github"></i> {{ $.Scratch.Get "subtitle" }}</p>
         </div>
     </li>
 </ul>
-<br>
-<h3>{{ .Title }}</h3>
-<br>
-<div>
-    {{ range .Params.tags }}
-    <span class="chip">
-    <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
-  </span> {{ end }}
-    <br>
-    <br>
-    <br>
-</div>
-<br>
-<div class="text-justify">{{ .Content }}</div>
+<br> -->
