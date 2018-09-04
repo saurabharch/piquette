@@ -147,7 +147,74 @@
 <div class="divider"></div>
     
 
-<div class="text-justify"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="text-justify">
+
+<p><br>
+<a href="https://goreportcard.com/badge/github.com/piquette/qtrn"><img src="https://goreportcard.com/badge/github.com/piquette/qtrn" alt="Go Report Card" /></a>
+<a href="https://travis-ci.org/piquette/qtrn"><img src="https://travis-ci.org/piquette/qtrn.svg?branch=master" alt="Build Status" /></a>
+<a href="https://godoc.org/github.com/piquette/qtrn"><img src="https://godoc.org/github.com/piquette/qtrn?status.svg" alt="GoDoc" /></a>
+<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" /></a></p>
+
+<p>The official cli tool for making financial markets analysis as fast as you are.</p>
+
+<p>Pronounced &ldquo;quote-tron&rdquo; as a throwback to those awesome financial terminals of the 80&rsquo;s. This project is intended as a living example of the capabilities of the <a href="https://github.com/piquette/finance-go">finance-go</a> library.</p>
+
+<p><br></p>
+
+<h3 id="commands">Commands</h3>
+
+<p>The current available commands are:</p>
+
+<ul>
+<li><code>quote</code> - prints tables of quotes to the current shell</li>
+<li><code>options</code> - prints tables of options contract quotes to the current shell</li>
+<li><code>write</code> - writes tables of quotes/history to csv files</li>
+</ul>
+
+<p><br></p>
+
+<h3 id="installation">Installation</h3>
+
+<p>In order to use this awesome tool, you&rsquo;ll need to get it on your machine!</p>
+
+<h4 id="from-homebrew">From Homebrew</h4>
+
+<p>If you&rsquo;re on macOS, the easiest way to get qtrn is through the homebrew tap.</p>
+
+<pre><code class="language-sh">brew tap piquette/qtrn
+brew install qtrn
+</code></pre>
+
+<h4 id="from-release">From Release</h4>
+
+<ol>
+<li>Head over to the official <a href="https://github.com/piquette/qtrn/releases">releases page</a></li>
+<li>Determine the appropriate distribution for your operating system (mac | windows | linux)</li>
+<li>Download and untar the distribution. Shortcut for macs:</li>
+</ol>
+
+<pre><code class="language-sh">curl -sL https://github.com/piquette/qtrn/releases/download/v0.0.7/qtrn_0.0.7_darwin_amd64.tar.gz | tar zx
+</code></pre>
+
+<ol>
+<li>Move the binary into your local <code>$PATH</code>.</li>
+<li>Run <code>qtrn help</code>.</li>
+</ol>
+
+<h4 id="from-source">From Source</h4>
+
+<p>qtrn is built in Go. <code>go get</code> the source repo, like this:</p>
+
+<pre><code>go get github.com/piquette/qtrn
+</code></pre>
+
+<p>If your <code>$GOPATH</code> is configured, and git is setup to know your credentials, in a few moments the command should complete with no output. The repository will exist under <code>$GOPATH/src/github.com/piquette</code>.</p>
+
+<p><br></p>
+
+<h3 id="usage">Usage</h3>
+
+<p>Run the command <code>qtrn</code> in your shell for the list of possible commands.</p>
 </div>
 
 
