@@ -11,8 +11,8 @@
   </url>
   
   <url>
-    <loc>https://piquette.io/research/creating-a-new-theme/</loc>
-    <lastmod>2018-02-28T00:00:00+00:00</lastmod>
+    <loc>https://piquette.io/research/placeholder/</loc>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -31,7 +31,7 @@
   
   <url>
     <loc>https://piquette.io/tags/data-science/</loc>
-    <lastmod>2018-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,13 +51,18 @@
   </url>
   
   <url>
+    <loc>https://piquette.io/tags/library/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://piquette.io/tags/market-data/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://piquette.io/</loc>
-    <lastmod>2018-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -68,13 +73,13 @@
   
   <url>
     <loc>https://piquette.io/tags/r/</loc>
-    <lastmod>2018-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://piquette.io/research/</loc>
-    <lastmod>2018-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -85,7 +90,7 @@
   
   <url>
     <loc>https://piquette.io/tags/</loc>
-    <lastmod>2018-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
