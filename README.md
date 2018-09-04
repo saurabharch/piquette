@@ -12,4 +12,8 @@ Check the `package.json` for a full list of commands and workflow.
 
 ## Deployment
 
-Run `npm run release` to rebuild the site in the public/ folder, merge to master. 
+* Run `npm run release` to rebuild the site in the public/ folder
+* Increment the `SITE_VERSION` in the travis file
+* Merge to master
+* Re-run build
+* Run update script on the box
