@@ -1,6 +1,6 @@
 ---
 title: "qtrn"
-description: "Command-line tool for displaying quotes and writing csv files"
+description: "Command-line tool for displaying quotes, charts, and writing csv files"
 repo: "#" # delete this line if you want blog-like posts for projects
 tags: ["golang", "cli"]
 weight: 2
@@ -22,6 +22,7 @@ Pronounced "quote-tron" as a throwback to those awesome financial terminals of t
 The current available commands are:
 
 * `quote` - prints tables of quotes to the current shell
+* `chart` - prints sparkline chart to the current shell
 * `options` - prints tables of options contract quotes to the current shell
 * `write` - writes tables of quotes/history to csv files
 
@@ -43,20 +44,25 @@ brew install qtrn
 3. Download and untar the distribution. Shortcut for macs:
 
 ```sh
-curl -sL https://github.com/piquette/qtrn/releases/download/v0.0.7/qtrn_0.0.7_darwin_amd64.tar.gz | tar zx
+curl -sL https://github.com/piquette/qtrn/releases/download/v0.0.8/qtrn_0.0.8_darwin_amd64.tar.gz | tar zx
 ```
 
 4. Move the binary into your local `$PATH`.
 5. Run `qtrn help`.
 
 #### From Source
-qtrn is built in Go. `go get` the source repo, like this:
+`qtrn` is built in Go, with v1.13+ preferred. Clone the source repo, like this:
 
 ```
-go get github.com/piquette/qtrn
+git clone https://github.com/piquette/qtrn.git
 ```
 
-If your `$GOPATH` is configured, and git is setup to know your credentials, in a few moments the command should complete with no output. The repository will exist under `$GOPATH/src/github.com/piquette`.
+Then run:
+
+```
+go mod download 
+make build
+```
 
 <br>
 ### Usage

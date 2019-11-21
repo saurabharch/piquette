@@ -13,7 +13,7 @@
     "url": "https://github.com/piquette/piquette/issues"
   },
   "devDependencies": {
-    "parallelshell": "^2.0.0",
+    "parallelshell": "2.0.0",
     "stylus": "^0.54.5"
   },
   "scripts": {
